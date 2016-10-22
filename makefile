@@ -10,7 +10,7 @@ stack: main.o list.o stack.o
 	$(cc) $(oflags) test main.o list.o stack.o
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
-list.o: list.cpp list.h
+list.o: link.cpp list.h
 	$(cc) $(cflags) list.cpp
 stack.o: stack.cpp stack.h
 	$(cc) $(cflags) stack.cpp
