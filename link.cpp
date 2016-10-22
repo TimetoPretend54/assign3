@@ -1,5 +1,5 @@
 #include <iostream>
-#include "link.h"
+#include "list.h"
 
 LinkedList::LinkedList()
 {
