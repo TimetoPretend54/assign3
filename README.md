@@ -16,3 +16,5 @@
 - A makefile should also be created to build the source and documentation.
 
 > Note: Objectives and Requirements sections were pulled from the assignment sheet.
+>
+> Also, please note that this code is very rigid and not very stable. The purpose of the assignment was to focus on using Git rather than the code.
