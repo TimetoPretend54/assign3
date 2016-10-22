@@ -7,7 +7,7 @@ cc = g++
 cflag = -c 
 oflags = -o
 stack: main.o list.o stack.o
-	$(cc) $(oflags) test main.o list.o stack.o
+	$(cc) $(oflags) stack main.o list.o stack.o
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
 list.o: link.cpp list.h
