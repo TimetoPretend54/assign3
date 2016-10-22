@@ -1,6 +1,8 @@
 #include <iostream>
 #include "list.h"
 
+using namespace std;
+
 LinkedList::LinkedList()
 {
    head = NULL;
