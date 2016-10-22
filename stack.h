@@ -22,7 +22,7 @@ public:
 	void Print();		// Print the Stack
 
 private:
-	nodePtr top_ofStack;	// Top
+	LinkedList top_ofStack;	// Top
 
 };
 
