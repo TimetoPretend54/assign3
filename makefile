@@ -9,10 +9,10 @@ oflags = -o
 program: main.o list.o stack.o
 	$(cc) $(oflags) program main.o list.o stack.o
 #Depndencies ---------------------------------------
-stack.o: stack.cpp stack.h
-	$(cc) $(cflags) stack.cpp
 list.o: link.cpp list.h
 	$(cc) $(cflags) link.cpp
+stack.o: stack.cpp stack.h
+	$(cc) $(cflags) stack.cpp
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
 clean: 
