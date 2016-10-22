@@ -4,10 +4,10 @@
 # Header files included: stack.h, list.h
 #
 cc = g++
-cflag = -c -g
-oflags = -o
+rename_flag = -o
+cflags = -c -g
 program: main.o list.o stack.o
-	$(cc) $(oflags) program main.o list.o stack.o
+	$(cc) $(rename_flag) program main.o link.o stack.o
 #Depndencies ---------------------------------------
 
 list.o: link.cpp list.h
@@ -18,6 +18,7 @@ stack.o: stack.cpp stack.h
 
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
+
 
 clean: 
 	rm -f *.o
