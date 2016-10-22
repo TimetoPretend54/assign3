@@ -32,6 +32,7 @@ class LinkedList{
       ~LinkedList();
       void addNode(int val);
       void removeNode(int val);
+      int firstNode();
       bool isEmpty();
       void printList();
 };
