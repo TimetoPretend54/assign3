@@ -11,7 +11,7 @@ stack: main.o list.o stack.o
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
 list.o: link.cpp list.h
-	$(cc) $(cflags) list.cpp
+	$(cc) $(cflags) link.cpp
 stack.o: stack.cpp stack.h
 	$(cc) $(cflags) stack.cpp
 clean: 
