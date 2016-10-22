@@ -61,6 +61,11 @@ void LinkedList::removeNode(int val)
     }
 }
 
+int LinkedList::firstNode()
+{
+   return head->data;
+}
+
 bool LinkedList::isEmpty()
 {
    if(count == 0)
