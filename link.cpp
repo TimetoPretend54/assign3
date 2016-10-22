@@ -1,6 +1,8 @@
 #include <iostream>
 #include "list.h"
 
+using namespace std;
+
 LinkedList::LinkedList()
 {
    head = NULL;
@@ -9,7 +11,7 @@ LinkedList::LinkedList()
 
 LinkedList::~LinkedList()
 {
-   nodeptr p = head, n;
+   nodePtr p = head, n;
    while (p != NULL)
    {
       n = p;
@@ -21,7 +23,7 @@ LinkedList::~LinkedList()
 //  Add an item to the FRONT of the list
 void LinkedList::addNode(int val)
 {
-    nodeptr n;
+    nodePtr n;
     n = new node;
     n->data = val;
     count++;
@@ -33,7 +35,7 @@ void LinkedList::addNode(int val)
     }
     else
     {
-        nodeptr tmp = head;
+        nodePtr tmp = head;
         n->next = tmp;
         head = n;
     }
@@ -41,7 +43,7 @@ void LinkedList::addNode(int val)
 
 void LinkedList::removeNode(int val)
 {
-    nodeptr prev, curr;
+    nodePtr prev, curr;
     curr = head;
     while( curr != NULL && val > curr->data )
     {
@@ -69,7 +71,7 @@ bool LinkedList::isEmpty()
 
 void LinkedList::printList()
 {
-    nodeptr p = head;
+    nodePtr p = head;
     while(p != NULL)
     {
         cout << p->data << endl;
