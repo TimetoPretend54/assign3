@@ -19,6 +19,8 @@ stack.o: stack.cpp stack.h
 main.o: main.cpp
 	$(cc) $(cflags) main.cpp
 
+latex: 
+	latex assign3.tex
 
 clean: 
 	rm -f *.o
